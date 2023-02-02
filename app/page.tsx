@@ -1,12 +1,12 @@
 'use client';
 
-import { InitOtherworld } from '@/hooks/overworld';
+import { InitOverworld } from '@/hooks/overworld';
 import { FC } from 'react';
 
 interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
-  const { canvasRef } = InitOtherworld();
+  const { canvasRef } = InitOverworld();
 
   return (
     <div className="w-screen h-screen bg-white flex justify-center items-center">
